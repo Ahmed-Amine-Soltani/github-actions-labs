@@ -14,8 +14,8 @@ jobs:
           npm -v
       - name: python Command
         run: |
-          import plateform
-          print (plateform.processor())
+          import platform
+          print (platform.processor())
         shell: python
   run-windows-command:
     runs-on: windows-latest
