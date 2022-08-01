@@ -7,8 +7,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: eccho "Hello World"
+        run: echo "Hello World"
       - name: multiline script
         run: |
           node -v
           npm -v
+      - name: python Command
+        run: |
+          import plateform
+          print (plateform.processor())
+  run-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: Directory Powershell
+        run: Get-location
+        shell: powershell
+      - name: Directory Bash
+        run: pwd
+        shell: bash
