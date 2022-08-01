@@ -16,6 +16,7 @@ jobs:
         run: |
           import plateform
           print (plateform.processor())
+        shell: python
   run-windows-command:
     runs-on: windows-latest
     steps:
